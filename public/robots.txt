@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://zhenyuan.vercel.app/sitemap.xml

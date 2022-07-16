@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Zhenyuan&#39;s Blog</title>
     <link>https://zhenyuan.vercel.app/</link>
     <description>Recent content on Zhenyuan&#39;s Blog</description>
+    <image>
+      <url>https://zhenyuan.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://zhenyuan.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Sat, 16 Jul 2022 08:48:05 +0800</lastBuildDate><atom:link href="https://zhenyuan.vercel.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First</title>
-      <link>https://zhenyuan.vercel.app/post/first/</link>
+      <title>编写可读代码的艺术</title>
+      <link>https://zhenyuan.vercel.app/post/%E7%BC%96%E5%86%99%E5%8F%AF%E8%AF%BB%E4%BB%A3%E7%A0%81%E7%9A%84%E8%89%BA%E6%9C%AF/</link>
       <pubDate>Sat, 16 Jul 2022 08:48:05 +0800</pubDate>
       
-      <guid>https://zhenyuan.vercel.app/post/first/</guid>
+      <guid>https://zhenyuan.vercel.app/post/%E7%BC%96%E5%86%99%E5%8F%AF%E8%AF%BB%E4%BB%A3%E7%A0%81%E7%9A%84%E8%89%BA%E6%9C%AF/</guid>
       <description>可读性基本定理：代码的写法应该让别人理解它所需的时间最小化。
  命名的改进  更多信息：让函数名和变量名承载更多的信息，避免使用泛泛的名字，比如 i, j, k, tmp, retVal 等 具体优于抽象：用具体的名字比抽象的名字好。比如 CanListenOnPort 就比 CanStartServer 更加具体。 名字长度与作用域：作用域越大的变量，名字应该越长。为作用域大的名字采用更长的名字——不要用让人费解的一个或两个字母的名字来命名在几屏之间都可见的变量。 细节：如果有，请给变量名带上重要细节, 例如单位 ms。 歧义：避免使用有歧义的命名，如filter。filter返回的，是过滤前还是过滤后的呢？  怎么写好注释  什么地方要写注释：站在代码读者的角度思考，让人说“啊？”的地方就应该加上注释 什么地方不需要注释：能从代码迅速推断出事实的地方 常量要有故事：说明为啥要用这个常量  简化循环和逻辑  if/else 语句块：一般来说优先处理正逻辑。比如用 if(debug) 不用 if(!debug) 减少循环嵌套：嵌套的代码块需要更加集中精力去理解。每层新的嵌套都需要读者把更多的上下文“压入栈”。应该把它们改写成更加“线性”的代码来避免深嵌套。 提前返回：通常来讲提早返回可以减少嵌套并让代码整洁。“保护语句”（在函数顶部处理简单的情况时）尤其有用。 别用 goto  优化变量的可读性  1.变量越多，就越难全部跟踪它们的动向。
 2.变量的作用域越大，就需要跟踪它的动向越久。
