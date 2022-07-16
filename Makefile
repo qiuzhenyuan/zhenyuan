@@ -9,7 +9,7 @@ gen:
 	hugo --baseUrl="https://zhenyuan.vercel.app"
 
 deploy:
-	git add. ; git commit -m "auto deploy"; git push origin master
+	hugo --baseUrl="https://zhenyuan.vercel.app" ; git add .; git commit -m "auto deploy"; git push origin master
 
 
 config:
