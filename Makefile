@@ -30,3 +30,5 @@ feature:
 	open https://github.com/adityatelange/hugo-PaperMod/wiki/Features
 serverless:
 	open https://vercel.com/docs/concepts/functions/serverless-functions
+utteranc:
+	open https://utteranc.es/
