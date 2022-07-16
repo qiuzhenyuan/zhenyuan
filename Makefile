@@ -16,7 +16,8 @@ config:
 	# code ~/zhenyuan/config.yml
 	/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code ~/zhenyuan/config.yml
 
-
+vercel:
+	open https://vercel.com/qiuzhenyuan/yuan
 
 doc:
 	open https://www.gohugo.org/
