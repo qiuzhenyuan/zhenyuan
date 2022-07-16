@@ -36,7 +36,7 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
@@ -50,10 +50,10 @@ params:
 
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
+    # - identifier: categories
+    #   name: categories
+    #   url: /categories/
+    #   weight: 10
     - identifier: tags
       name: tags
       url: /tags/
@@ -62,6 +62,12 @@ menu:
       name: posts 
       url: /post/
       weight: 20
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 20
+    # - identifier: example
+ 
     # - identifier: example
     #   name: example.org
     #   url: https://example.org
@@ -74,5 +80,11 @@ markup:
     # anchorLineNos: true
     # codeFences: true
     # guessSyntax: true
-    lineNos: true
-    # style: monokai
+    # lineNos: true
+    style: monokai
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
