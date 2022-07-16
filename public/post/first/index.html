@@ -18,9 +18,9 @@
 
 
 
-  	<meta property="og:title" content="First &middot; My New Hugo Site" />
-  	<meta property="og:site_name" content="My New Hugo Site" />
-  	<meta property="og:url" content="https://yuan-seven.vercel.app/post/first/" />
+  	<meta property="og:title" content="First &middot; Zhenyuan&#39;s Blog" />
+  	<meta property="og:site_name" content="Zhenyuan&#39;s Blog" />
+  	<meta property="og:url" content="https://zhenyuan.vercel.app/post/first/" />
 
     
         
@@ -34,10 +34,11 @@
     
     
 
-    <title>First &middot; My New Hugo Site</title>
+    <title>First &middot; Zhenyuan&#39;s Blog</title>
 
     
-    <meta name="description" content="hello world " />
+    <meta name="description" content="可读性基本定理：代码的写法应该让别人理解它所需的时间最小化。
+ 命名的改进  更多信息：让函数名和变量名承载更多的信息，避免使用泛泛的名字，比如 i, j, k, tmp, retVal 等 具体优于抽象：用具体的名字比抽象的名字好。比如 CanListenOnPort 就比 CanStartServer 更加具体。 " />
     
 
     <meta name="HandheldFriendly" content="True" />
@@ -55,13 +56,13 @@
 
     
       
-          <link href="/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+          <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Zhenyuan&#39;s Blog" />
       
       
     
     <meta name="generator" content="Hugo 0.83.1" />
 
-    <link rel="canonical" href="https://yuan-seven.vercel.app/post/first/" />
+    <link rel="canonical" href="https://zhenyuan.vercel.app/post/first/" />
 
     
       
@@ -92,13 +93,13 @@
     },
     "headline": "First",
     "name": "First",
-    "wordCount":  2 ,
+    "wordCount":  50 ,
     "timeRequired": "PT1M",
     "inLanguage": {
       "@type": "Language",
       "alternateName": "en"
     },
-    "url": "https://yuan-seven.vercel.app/post/first/",
+    "url": "https://zhenyuan.vercel.app/post/first/",
     "datePublished": "2022-07-16T08:48Z",
     "dateModified": "2022-07-16T08:48Z",
     
@@ -106,7 +107,7 @@
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://yuan-seven.vercel.app/post/first/"
+        "@id": "https://zhenyuan.vercel.app/post/first/"
     }
 }
     </script>
@@ -177,7 +178,54 @@
     </header>
 
     <section class="post-content">
-      <h1 id="hello-world">hello world</h1>
+      <blockquote>
+<p>可读性基本定理：代码的写法应该让别人理解它所需的时间最小化。</p>
+</blockquote>
+<h2 id="命名的改进">命名的改进</h2>
+<ul>
+<li>更多信息：让函数名和变量名承载更多的信息，避免使用泛泛的名字，比如 i, j, k, tmp, retVal 等</li>
+<li>具体优于抽象：用具体的名字比抽象的名字好。比如 CanListenOnPort 就比 CanStartServer 更加具体。</li>
+<li>名字长度与作用域：作用域越大的变量，名字应该越长。为作用域大的名字采用更长的名字——不要用让人费解的一个或两个字母的名字来命名在几屏之间都可见的变量。</li>
+<li>细节：如果有，请给变量名带上重要细节, 例如单位 ms。</li>
+<li>歧义：避免使用有歧义的命名，如filter。filter返回的，是过滤前还是过滤后的呢？</li>
+</ul>
+<h2 id="怎么写好注释">怎么写好注释</h2>
+<ul>
+<li>什么地方要写注释：站在代码读者的角度思考，让人说“啊？”的地方就应该加上注释</li>
+<li>什么地方不需要注释：能从代码迅速推断出事实的地方</li>
+<li>常量要有故事：说明为啥要用这个常量</li>
+</ul>
+<h2 id="简化循环和逻辑">简化循环和逻辑</h2>
+<ul>
+<li>if/else 语句块：一般来说优先处理正逻辑。比如用 if(debug) 不用 if(!debug)</li>
+<li>减少循环嵌套：嵌套的代码块需要更加集中精力去理解。每层新的嵌套都需要读者把更多的上下文“压入栈”。应该把它们改写成更加“线性”的代码来避免深嵌套。</li>
+<li>提前返回：通常来讲提早返回可以减少嵌套并让代码整洁。“保护语句”（在函数顶部处理简单的情况时）尤其有用。</li>
+<li>别用 goto</li>
+</ul>
+<h2 id="优化变量的可读性">优化变量的可读性</h2>
+<blockquote>
+<p>1.变量越多，就越难全部跟踪它们的动向。<br>
+2.变量的作用域越大，就需要跟踪它的动向越久。<br>
+3.变量改变得越频繁，就越难以跟踪它的当前值。</p>
+</blockquote>
+<ul>
+<li><strong>减少变量</strong>：只用一次的变量，也许可以直接干到。例如now:= time.Now() 如果只用一次，就没必要定义这个变量。因为程序员看到它定义出来会以为它会被多次用到，但它实际又没有</li>
+<li><strong>缩小变量作用域</strong>：让你的变量对尽量少的代码行可见。有时可以把定义向下移。<strong>因为读者在读到后面之前不需要知道所有变量，所以可以简单地把每个定义移到对它的使用之前</strong></li>
+<li><strong>只写一次的变量更好</strong>：操作一个变量的地方越多，越难确定它的当前值。</li>
+</ul>
+<h2 id="更高层次的组织">更高层次的组织</h2>
+<ul>
+<li>思考更高层次的目标：看看某个函数或代码块，问问你自己：
+<ol>
+<li>这段代码高层次的目标是什么？</li>
+<li>对于每一行代码，问一下：它是直接为了目标而工作吗？这段代码高层次的目标是什么呢？</li>
+</ol>
+</li>
+<li>抽函数：如果足够的行数在解决不相关的子问题，抽取代码到独立的函数中。</li>
+<li>分段，一次只做一件事：把代码组织得一次只做一件事情。但是就算你不这样做，你仍然可以在函数内部组织代码，使得它感觉像是有分开的逻辑段。</li>
+</ul>
+<h2 id="参考">参考</h2>
+<p><a href="https://book.douban.com/subject/10797189/">编写可读代码的艺术</a></p>
 
     </section>
 
@@ -193,19 +241,19 @@
     
 <section class="share">
   <h4>Share this post</h4>
-  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=First&nbsp;-&nbsp;My%20New%20Hugo%20Site&amp;url=https%3a%2f%2fyuan-seven.vercel.app%2fpost%2ffirst%2f"
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=First&nbsp;-&nbsp;Zhenyuan%27s%20Blog&amp;url=https%3a%2f%2fzhenyuan.vercel.app%2fpost%2ffirst%2f"
       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
       <span class="hidden">Twitter</span>
   </a>
-  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fyuan-seven.vercel.app%2fpost%2ffirst%2f"
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fzhenyuan.vercel.app%2fpost%2ffirst%2f"
       onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
       <span class="hidden">Facebook</span>
   </a>
-  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fyuan-seven.vercel.app%2fpost%2ffirst%2f&amp;description=First"
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fzhenyuan.vercel.app%2fpost%2ffirst%2f&amp;description=First"
       onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
       <span class="hidden">Pinterest</span>
   </a>
-  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fyuan-seven.vercel.app%2fpost%2ffirst%2f"
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fzhenyuan.vercel.app%2fpost%2ffirst%2f"
      onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
       <span class="hidden">Google+</span>
   </a>
@@ -235,7 +283,7 @@
 
 
     <footer class="site-footer clearfix">
-        <section class="copyright"><a href="">My New Hugo Site</a> </section>
+        <section class="copyright"><a href="">Zhenyuan&#39;s Blog</a> </section>
         
         <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
         
