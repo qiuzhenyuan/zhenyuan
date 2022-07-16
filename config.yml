@@ -24,7 +24,7 @@ minify:
 params:
   homeInfoParams:
     Title: Hi there 👋 
-    Content: Weocome to my blog.I 'm a software development engineer working in Bytedance. I love reading and writing in my spare time. I want to share what I read and what I think in my blog.
+    Content: Weocome to my blog. I 'm a software development engineer working in Bytedance. I love reading and writing in my spare time. I want to share what I read and what I think in my blog.
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: ExampleSite
   description: "ExampleSite description"
