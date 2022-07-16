@@ -54,24 +54,24 @@ params:
 
 menu:
   main:
-    - identifier: archives #注意对齐空格
-      name: archives
+    - identifier: Archives #注意对齐空格
+      name: Archives
       url: /archives/
       weight: 10
-    - identifier: search
-      name: search
+    - identifier: Search
+      name: Search
       url: /search/
       weight: 30
-    - identifier: tags
-      name: tags
+    - identifier: Tags
+      name: Tags
       url: /tags/
       weight: 20
     # - identifier: posts
     #   name: posts 
     #   url: /post/
     #   weight: 20
-    - identifier: digital garden
-      name: digital garden
+    - identifier: Digital Garden
+      name: Digital Garden
       url: https://qiuzhenyuan.vercel.app
       weight: 40
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
