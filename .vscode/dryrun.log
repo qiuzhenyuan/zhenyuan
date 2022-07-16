@@ -1,6 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Users/qiuzhenyuan/zhenyuan'
+# hugo server -t casper -D
+hugo server -D
 make: Leaving directory `/Users/qiuzhenyuan/zhenyuan'
  
-make: *** No targets.  Stop.
-
