@@ -28,3 +28,5 @@ qa:
 	open https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-faq/
 feature:
 	open https://github.com/adityatelange/hugo-PaperMod/wiki/Features
+serverless:
+	open https://vercel.com/docs/concepts/functions/serverless-functions
