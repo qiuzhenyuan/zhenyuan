@@ -8,7 +8,8 @@ gen:
 	# hugo --theme=casper --baseUrl="https://zhenyuan.vercel.app"
 	hugo --baseUrl="https://zhenyuan.vercel.app"
 
-deploy:
+
+commitanddeploy:
 	hugo --baseUrl="https://zhenyuan.vercel.app" ; git add .; git commit -m "auto deploy"; git push origin master
 
 
