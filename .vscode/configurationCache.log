@@ -1,1 +1,1 @@
-{"buildTargets":["commitanddeploy","config","debug","doc","feature","gen","qa","theme","vercel"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
+{"buildTargets":["commitanddeploy","config","debug","doc","feature","gen","make","qa","serverless","theme","utteranc","vercel"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

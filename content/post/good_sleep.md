@@ -3,7 +3,7 @@ title: "How to Have a Good Sleep"
 date: 2022-07-16T15:42:03+08:00
 draft: false
 ShowWordCount: false
-tags: ["life"]
+tags: ["life","reading notes"]
 showToc: true
 TocOpen: true
 ShowBreadCrumbs: true
@@ -29,15 +29,15 @@ People spend a third of their time sleeping, but few of them pay enough attentio
 ## Some theories
 
 1. About Sympathetic and Parasympathetic
-   a. **Sympathetic nervous system**: The sympathetic nervous system is also known as the "stress response system". When we encounter an emergency, we first let go of less urgent physiological functions, such as digestion, and deal with stress wholeheartedly. As mentioned earlier, cortisol is a stress hormone, which helps expand the response to stress at the endocrine level.
-   b. **Parasympathetic nervous system**: the role of parasympathetic nervous system is just the opposite, just like in the gap after a crisis, helping the body relax and prepare for recuperation is also indispensable for survival.
+  a. **Sympathetic nervous system**: The sympathetic nervous system is also known as the "stress response system". When we encounter an emergency, we first let go of less urgent physiological functions, such as digestion, and deal with stress wholeheartedly. As mentioned earlier, cortisol is a stress hormone, which helps expand the response to stress at the endocrine level.
+  b. **Parasympathetic nervous system**: the role of parasympathetic nervous system is just the opposite, just like in the gap after a crisis, helping the body relax and prepare for recuperation is also indispensable for survival.
 2. About Coffee
-	a. The half-life period of coffee is 5 hours, which means if you drink a cup of coffee in 12:00 am, it remains a half a cup of coffee in your body in 5:00 pm.
-	b. What coffee can help us is suppressing our netural response to fatigue.
+  a. The half-life period of coffee is 5 hours, which means if you drink a cup of coffee in 12:00 am, it remains a half a cup of coffee in your body in 5:00 pm.
+  b. What coffee can help us is suppressing our netural response to fatigue.
 
 ## Reference
 
-《好睡：新的睡眠科学和医学》——杨定一
+《好睡：新的睡眠科学和医学》—— 杨定一
 
 ## 中文版 （Chinese Version)
 
@@ -67,4 +67,4 @@ People spend a third of their time sleeping, but few of them pay enough attentio
 
 ### 参考资料
 
-《好睡：新的睡眠科学和医学》——杨定一
+《好睡：新的睡眠科学和医学》—— 杨定一
