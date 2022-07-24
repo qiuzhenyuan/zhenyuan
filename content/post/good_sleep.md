@@ -21,7 +21,7 @@ People spend a third of their time sleeping, but few of them pay enough attentio
 
 ## Some Ways to Have a Good Sleep
 
-1. **Reduce stimulation**:Sympathetic overstimulation is the biggest cause of our physical and mental imbalance in the 21st century. So stop reading feed news before sleep.
+1. **Reduce stimulation**: Sympathetic overstimulation is the biggest cause of our physical and mental imbalance in the 21st century. So stop reading feed news before sleep.
 2. **Breth with your nose and breath deeply**: breathing is one of a few exercises that can be carried out contiously and uncontiously. You can try to breath contiously.
 3. **keeping tongue in touch with palate**: that will make you breath with your nose.
 4. **Yawn**: yawning can relax our nervous. We can even yawn voluntarily.
@@ -29,11 +29,13 @@ People spend a third of their time sleeping, but few of them pay enough attentio
 ## Some theories
 
 1. About Sympathetic and Parasympathetic 
-  a. **Sympathetic nervous system**: The sympathetic nervous system is also known as the "stress response system". When we encounter an emergency, we first let go of less urgent physiological functions, such as digestion, and deal with stress wholeheartedly. As mentioned earlier, cortisol is a stress hormone, which helps expand the response to stress at the endocrine level.  
-  b. **Parasympathetic nervous system**: the role of parasympathetic nervous system is just the opposite, just like in the gap after a crisis, helping the body relax and prepare for recuperation is also indispensable for survival.
-2. About Coffee
-  a. The half-life period of coffee is 5 hours, which means if you drink a cup of coffee in 12:00 am, it remains a half a cup of coffee in your body in 5:00 pm.  
-  b. What coffee can help us is suppressing our netural response to fatigue.  
+
+- **Sympathetic nervous system**: The sympathetic nervous system is also known as the "stress response system". When we encounter an emergency, we first let go of less urgent physiological functions, such as digestion, and deal with stress wholeheartedly. As mentioned earlier, cortisol is a stress hormone, which helps expand the response to stress at the endocrine level.  
+- **Parasympathetic nervous system**: the role of parasympathetic nervous system is just the opposite, just like in the gap after a crisis, helping the body relax and prepare for recuperation is also indispensable for survival.
+
+2. About Coffee 
+- The half-life period of coffee is 5 hours, which means if you drink a cup of coffee in 12:00 am, it remains a half a cup of coffee in your body in 5:00 pm.  
+- What coffee can help us is suppressing our netural response to fatigue.  
 
 ## Reference
 
@@ -60,7 +62,7 @@ People spend a third of their time sleeping, but few of them pay enough attentio
 ### 一些理论
 
 1. 🧠 关于交感与副交感
-  a. 交感神经系统又被称为“压力反应系统”，让我们在遇到紧急状况时，先放掉不那么急迫的生理功能，例如消化，而全心全意地应付压力。前面谈过皮质醇是压力荷尔蒙，也就是在内分泌的层面帮助扩大压力的反应。    
+  a. 交感神经系统又被称为“压力反应系统”，让我们在遇到紧急状况时，先放掉不那么急迫的生理功能，例如消化，而全心全意地应付压力。前面谈过皮质醇是压力荷尔蒙，也就是在内分泌的层面帮助扩大压力的反应。  
   b. 副交感神经系统的作用是刚好相反，就像是在危机过后的空档，帮助身体放松下来，准备休养生息，也是生存所不可或缺。  
 2. ☕️ 咖啡的半衰期时5小时；🚬尼古丁的半衰期时2小时。  
 3. ☕️ 咖啡带来的清醒，其实是去压制身体面对疲劳的自然反应。压制腺苷的受体。  
