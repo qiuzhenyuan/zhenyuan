@@ -137,8 +137,7 @@ COMMAND_MODE = unix2003
 MAKEFILES := 
 # automatic
 <F = $(notdir $<)
-# environment
-GOPRIVATE = *.byted.org,*.everphoto.cn
+
 # environment
 PAGER = less
 # environment
